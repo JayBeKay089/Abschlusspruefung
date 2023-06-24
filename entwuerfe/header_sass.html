@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meine Webseite</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* CSS-Stil für die Hervorhebung der aktuellen Seite */
+        .current-page {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        async function includeHTML() {
+            const header = await fetch('header.html');
+            const headerText = await header.text();
+            document.querySelector('header').innerHTML = headerText;
+            
+            const footer = await fetch('footer.html');
+            const footerText = await footer.text();
+            document.querySelector('footer').innerHTML = footerText;
+            
+            // Hervorhebung der aktuellen Seite
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('current-page');
+                }
+            });
+        }
+        
+        includeHTML();
+    </script>
+</head>
+<body>
+    <header></header>
+    
+    <main>
+        <!-- Inhalte der Seite hier einfügen -->
+    </main>
+    
+    <footer></footer>
+</body>
+</html>

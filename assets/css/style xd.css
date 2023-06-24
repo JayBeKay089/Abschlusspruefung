@@ -1,0 +1,155 @@
+:root {
+
+/* Colors: */
+--color-f08922: #F08922;
+--color-000f17: #000F17;
+--color-125d89: #125D89;
+--color-0070b2: #0070B2;
+--color-c4eaff: #C4EAFF;
+--color-f7fcff: #F7FCFF;
+--color-a2a5a6: #A2A5A6;
+--color-dfe6eb: #DFE6EB;
+--color-ff00b1: #FF00B1;
+--color-00ff14: #00FF14;
+--color-ff1d00: #FF1D00;
+--color-ffffff: #FFFFFF;
+--color-ff8811: #FF8811;
+
+/* Font/text values */
+--font-family-rubik: Rubik;
+--font-style-normal: normal;
+--font-weight-600: 600px;
+--font-weight-normal: normal;
+--font-weight-medium: medium;
+--font-size-17: 17px;
+--font-size-18: 18px;
+--font-size-20: 20px;
+--font-size-26: 26px;
+--font-size-27: 27px;
+--font-size-40: 40px;
+--font-size-72: 72px;
+--font-size-105: 105px;
+--character-spacing-0: 0px;
+--character-spacing-0-8: 0.8px;
+--character-spacing--1-05: -1.05px;
+--line-spacing-27: 27px;
+--line-spacing-35: 35px;
+--line-spacing-40: 40px;
+--line-spacing-50: 50px;
+--line-spacing-85: 85px;
+--line-spacing-115: 115px;
+--decoration-underline: underline;
+--text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.h0 {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-600);
+font-size: var(--font-size-105);
+line-height: var(--line-spacing-115);
+letter-spacing: var(--character-spacing--1-05);
+color: var(--color-ffffff);
+}
+.h1 {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-600);
+font-size: var(--font-size-72);
+line-height: var(--line-spacing-85);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-f7fcff);
+}
+.h2 {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-medium);
+font-size: var(--font-size-40);
+line-height: var(--line-spacing-50);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-0070b2);
+}
+.h3 {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-medium);
+font-size: var(--font-size-27);
+line-height: var(--line-spacing-40);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-0070b2);
+}
+.h4 {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-600);
+font-size: var(--font-size-20);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0-8);
+color: var(--color-0070b2);
+text-transform: var(--text-transform-uppercase);
+}
+.fließtext-schwarz {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-normal);
+font-size: var(--font-size-20);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-000f17);
+}
+.fließtext-schwarz-bold {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-medium);
+font-size: var(--font-size-20);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-000f17);
+}
+.fließtext-link {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-600);
+font-size: var(--font-size-20);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-ff8811);
+text-decoration: var(--decoration-underline);
+}
+.fließtext-weiß-bold {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-medium);
+font-size: var(--font-size-20);
+line-height: var(--line-spacing-27);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-ffffff);
+}
+.bildunterschrift-groß {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-normal);
+font-size: var(--font-size-26);
+line-height: var(--line-spacing-40);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-000f17);
+}
+.bildunterschrift-klein {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-normal);
+font-size: var(--font-size-18);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-f7fcff);
+}
+.formular-label {
+font-family: var(--font-family-rubik);
+font-style: var(--font-style-normal);
+font-weight: var(--font-weight-medium);
+font-size: var(--font-size-17);
+line-height: var(--line-spacing-35);
+letter-spacing: var(--character-spacing-0);
+color: var(--color-000f17);
+}
