@@ -1,34 +1,43 @@
-function einblende2() {
-  var x = document.getElementById("FormSektion2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+document.addEventListener("DOMContentLoaded", function () {
+  const animationRadio0 = document.getElementById("animation_radio_0");
+  const animationRadio1 = document.getElementById("animation_radio_1");
+  const animationSection = document.getElementById("animation");
+
+  // Function to handle visibility based on radio button selection
+  function handleAnimationVisibility() {
+    if (animationRadio0.checked) {
+      animationSection.style.display = "block"; // Show the animation section
+    } else {
+      animationSection.style.display = "none"; // Hide the animation section
+    }
   }
-}
 
-function einblende3() {
-  var x = document.getElementById("FormSektion3");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  // Set initial visibility based on default selection
+  handleAnimationVisibility();
+
+  // Add event listeners to both radio buttons
+  animationRadio0.addEventListener("change", handleAnimationVisibility);
+  animationRadio1.addEventListener("change", handleAnimationVisibility);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bewirtungRadio0 = document.getElementById("bewirtung_radio_0");
+  const bewirtungRadio1 = document.getElementById("bewirtung_radio_1");
+  const bewirtungSection = document.getElementById("bewirtung");
+
+  // Function to handle visibility based on radio button selection
+  function handlebewirtungVisibility() {
+    if (bewirtungRadio0.checked) {
+      bewirtungSection.style.display = "block"; // Show the bewirtung section
+    } else {
+      bewirtungSection.style.display = "none"; // Hide the bewirtung section
+    }
   }
-}
 
-// function ausblendenUndEinblenden() {
-//   var formSektion1 = document.getElementById("FormSektion1");
-//   var formSektion2 = document.getElementById("FormSektion2");
+  // Set initial visibility based on default selection
+  handlebewirtungVisibility();
 
-//   if (formSektion1.style.display === "none") {
-//     formSektion1.style.display = "block";
-//   } else {
-//     formSektion1.style.display = "none";
-//   }
-
-//   if (formSektion2.style.display === "none") {
-//     formSektion2.style.display = "block";
-//   } else {
-//     formSektion2.style.display = "none";
-//   }
-// }
+  // Add event listeners to both radio buttons
+  bewirtungRadio0.addEventListener("change", handlebewirtungVisibility);
+  bewirtungRadio1.addEventListener("change", handlebewirtungVisibility);
+});

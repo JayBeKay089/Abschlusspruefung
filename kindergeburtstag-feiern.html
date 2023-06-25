@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
     <title>Kindergeburtstag feiern</title>
-    <meta name="description" content="XXX Beschreibungstext" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/images_web/logo_schwimmspaß_favicon.svg" />
     <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
@@ -16,9 +16,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-weiss navbar sticky-top shadow-sm">
       <div class="container my-1">
-        <a href="./index.html"><img style="height: 55px" src="./assets/images_web/logo_schwimmspaß_wortbildmarke.svg" alt="XXX" /></a>
+        <a href="./index.html"><img style="height: 55px" src="./assets/images_web/logo_schwimmspaß_wortbildmarke.svg" alt="Schwimmspaß Logo" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="./assets/images_web/Burger-Menü.svg" style="width: 45px" alt="XXX" />
+          <img src="./assets/images_web/Burger-Menue.svg" style="width: 45px" alt="Menü" />
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
@@ -73,145 +73,194 @@
       </div>
     </section>
 
-    <!-- Skript für Formular -->
     <script src="./assets/js/animation.js"></script>
-
-    <!-- Formular -->
-    <!-- ! Form sorgt für refresh bei Button-Press -->
-    <!-- ! Weiter Button funkt nicht, display bleibt auf none wegen meiner klasse -->
     <div class="container px-4 mb-5">
       <div class="row justify-content-center">
-        <div class="col-lg-6 bg-hellblau rounded-5 px-4 py-3">
-          <!-- Sektion 1 -->
-          <section>
-            <h2 class="h2 text-dunkelblaugesaettigt mt-3 pt-3">Meine Wunschliste für den Kindergeburtstag:</h2>
-            <div class="form-group py-2">
-              <label class="h4 text-dunkelblaugesaettigt pt-3">Animation</label>
-              <div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Mit Animation" />
-                  <label for="radio_0" class="custom-control-label">Mit Animation</label>
+        <div class="col-lg-6 bg-hellblau px-4 px-sm-5 rounded-5 py-3">
+          <form class="row py-5">
+            <h2>Meine Wunschliste für den Kindergeburtstag:</h2>
+            <!-- Animation -->
+            <span>
+              <section>
+                <label class="h5 pt-4">Animation</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input name="animation_radio" id="animation_radio_0" type="radio" required="required" class="form-check-input" value="mit_animation" />
+                    <label for="animation_radio_0" class="form-check-label">Mit Animation</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input name="animation_radio" id="animation_radio_1" type="radio" required="required" class="form-check-input" value="ohne_Animation" checked />
+                    <label for="animation_radio_1" class="form-check-label">Ohne Animation, selbstgestaltet</label>
+                  </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Ohne Animation, selbstgestaltet" />
-                  <label for="radio_1" class="custom-control-label">Ohne Animation, selbstgestaltet</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group py-2">
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Altersgerechte Wasserballspiele" />
-                <label for="checkbox_0" class="custom-control-label">Altersgerechte Wasserballspiele</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Nach verborgenen Schätzen tauchen" />
-                <label for="checkbox_1" class="custom-control-label">Nach verborgenen Schätzen tauchen</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Spielerisches Wettschwimmen" />
-                <label for="checkbox_2" class="custom-control-label">Spielerisches Wettschwimmen</label>
-              </div>
-            </div>
-            <div class="form-group py-2">
-              <label class="h4 text-dunkelblaugesaettigt pt-3">Fotobegleitung</label>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Mit Fotobegleitung" />
-                <label for="checkbox_2" class="custom-control-label">Mit Fotobegleitung</label>
-              </div>
-            </div>
-          </section>
+              </section>
 
-          <!-- Sektion 2 -->
-          <section class="d-none" id="FormSektion2">
-            <h2 class="h2 text-dunkelblaugesaettigt mt-3 pt-3">Bewirtung</h2>
-            <div class="form-group py-2">
-              <div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="radio" id="radio_0" type="radio" class="custom-control-input" value="Mit Animation" />
-                  <label for="radio_0" class="custom-control-label">Mit Animation</label>
+              <section id="animation" class="pt-3">
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input name="animation_checkbox" id="animation_checkbox_0" type="checkbox" class="form-check-input" value="wasserballspiele" />
+                    <label for="animation_checkbox_0" class="form-check-label">Altersgerechte Wasserballspiele</label>
+                  </div>
+                  <div class="custom-control form-check form-check-inline">
+                    <input name="animation_checkbox" id="animation_checkbox_1" type="checkbox" class="form-check-input" value="schaetze_tauchen" />
+                    <label for="animation_checkbox_1" class="form-check-label">Nach verborgenen Schätzen tauchen</label>
+                  </div>
+                  <div class="custom-control form-check form-check-inline">
+                    <input name="animation_checkbox" id="animation_checkbox_2" type="checkbox" class="form-check-input" value="wettschwimmen" />
+                    <label for="animation_checkbox_2" class="form-check-label">Spielerisches Wettschwimmen</label>
+                  </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="radio" id="radio_1" type="radio" class="custom-control-input" value="Ohne Animation, selbstgestaltet" />
-                  <label for="radio_1" class="custom-control-label">Ohne Animation, selbstgestaltet</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group py-2">
-              <label class="h4 text-dunkelblaugesaettigt pt-3">Bewirtung</label>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Pommes" />
-                <label for="checkbox_0" class="custom-control-label">Pommes</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Schnitzel" />
-                <label for="checkbox_1" class="custom-control-label">Schnitzel</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Würstchen" />
-                <label for="checkbox_2" class="custom-control-label">Würstchen</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Vegetarischer Bratling" />
-                <label for="checkbox_0" class="custom-control-label">Vegetarischer Bratling</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Vegetarisches Würstchen" />
-                <label for="checkbox_1" class="custom-control-label">Vegetarisches Würstchen</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Spagetti mit Tomatensoße" />
-                <label for="checkbox_2" class="custom-control-label">Spagetti mit Tomatensoße</label>
-              </div>
-            </div>
-            <div class="form-group py-2">
-              <label class="h4 text-dunkelblaugesaettigt pt-3">Getränke</label>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Wasser (still) " />
-                <label for="checkbox_0" class="custom-control-label">Wasser (still) </label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Zitronenlimonade" />
-                <label for="checkbox_1" class="custom-control-label">Zitronenlimonade</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Wasser (medium)" />
-                <label for="checkbox_2" class="custom-control-label">Wasser (medium)</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Orangenlimonade" />
-                <label for="checkbox_0" class="custom-control-label">Orangenlimonade</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Apfelsaft" />
-                <label for="checkbox_1" class="custom-control-label">Apfelsaft</label>
-              </div>
-              <div class="custom-control custom-checkbox custom-control-inline">
-                <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Himbeerlimonade" />
-                <label for="checkbox_2" class="custom-control-label">Himbeerlimonade</label>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Orangensaft" />
-                  <label for="checkbox_1" class="custom-control-label">Orangensaft</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Waldmeisterlimonade" />
-                  <label for="checkbox_2" class="custom-control-label">Waldmeisterlimonade</label>
-                </div>
-              </div>
-            </div>
-          </section>
+              </section>
+            </span>
 
-          <button onclick="einblenden2()" class="btn btn-primary my-3">Weiter</button>
+            <!-- Fotobegleitung -->
+            <section>
+              <label class="h5 pt-4">Fotobegleitung</label>
+              <div>
+                <div class="custom-control form-check form-check-inline">
+                  <input name="fotobegleitung_checkbox" id="fotobegleitung_checkbox_0" type="checkbox" class="form-check-input" value="fotobegleitung" />
+                  <label for="fotobegleitung_checkbox_0" class="form-check-label">Mit Fotobegleitung</label>
+                </div>
+              </div>
+            </section>
+
+            <!-- Bewirtung -->
+            <section>
+              <label class="h2 pt-5">Bewirtung</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input name="bewirtung_radio" id="bewirtung_radio_0" type="radio" required="required" class="form-check-input" value="mit_bewirtung" />
+                  <label for="bewirtung_radio_0" class="form-check-label">Mit Bewirtung</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input name="bewirtung_radio" id="bewirtung_radio_1" type="radio" required="required" class="form-check-input" value="ohne_bewirtung" checked />
+                  <label for="bewirtung_radio_1" class="form-check-label">Ohne Bewirtung</label>
+                </div>
+              </div>
+            </section>
+
+            <!-- Essen & Getränke -->
+            <span id="bewirtung">
+              <!-- Essen -->
+              <section>
+                <label class="h5 pt-4">Essen</label>
+                <div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_0" type="checkbox" class="form-check-input" value="pommes" />
+                    <label for="essen_checkbox_0" class="form-check-label">Pommes</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_1" type="checkbox" class="form-check-input" value="schnitzel" />
+                    <label for="essen_checkbox_1" class="form-check-label">Schnitzel</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_2" type="checkbox" class="form-check-input" value="wuerstchen" />
+                    <label for="essen_checkbox_2" class="form-check-label">Würstchen</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_3" type="checkbox" class="form-check-input" value="vegetarischer_bratling" />
+                    <label for="essen_checkbox_3" class="form-check-label">Vegetarischer Bratling</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_4" type="checkbox" class="form-check-input" value="vegetarisches_wuerstchen" />
+                    <label for="essen_checkbox_4" class="form-check-label">Vegetarisches Würstchen</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="essen_checkbox" id="essen_checkbox_5" type="checkbox" class="form-check-input" value="spaghetti_tomatensoße" />
+                    <label for="essen_checkbox_5" class="form-check-label">Spaghetti mit Tomatensoße</label>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Getränke -->
+              <section>
+                <label class="h5 pt-4">Getränke</label>
+                <div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_0" type="checkbox" class="form-check-input" value="wasser_still" />
+                    <label for="getraenke_checkbox_0" class="form-check-label">Wasser (still)</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_1" type="checkbox" class="form-check-input" value="wasser_medium" />
+                    <label for="getraenke_checkbox_1" class="form-check-label">Wasser (medium)</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_2" type="checkbox" class="form-check-input" value="apfelsaft" />
+                    <label for="getraenke_checkbox_2" class="form-check-label">Apfelsaft</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_3" type="checkbox" class="form-check-input" value="orangensaft" />
+                    <label for="getraenke_checkbox_3" class="form-check-label">Orangensaft</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_4" type="checkbox" class="form-check-input" value="zitronenlimonade" />
+                    <label for="getraenke_checkbox_4" class="form-check-label">Zitronenlimonade</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_5" type="checkbox" class="form-check-input" value="orangenlimonade" />
+                    <label for="getraenke_checkbox_5" class="form-check-label">Orangenlimonade</label>
+                  </div>
+                  <div class="custom-control form-check">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_6" type="checkbox" class="form-check-input" value="himbeerlimonade" />
+                    <label for="getraenke_checkbox_6" class="form-check-label">Himbeerlimonade</label>
+                  </div>
+                  <div class="custom-control form-check form-check-inline">
+                    <input name="getraenke_checkbox" id="getraenke_checkbox_7" type="checkbox" class="form-check-input" value="waldmeisterlimonade" />
+                    <label for="getraenke_checkbox_7" class="form-check-label">Waldmeisterlimonade</label>
+                  </div>
+                </div>
+              </section>
+            </span>
+
+            <!-- Persönliche Angaben -->
+            <section class="row g-4">
+              <h2>Angaben zur Person des verantwortlichen Elternteils</h2>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="termin" class="form-label fw-bold">Wunschtermin</label>
+                <input id="termin" name="termin" placeholder="TT.MM.JJJJ" type="date" class="form-control" />
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="anrede_select" class="form-label fw-bold">Anrede</label>
+                <select class="form-select" id="anrede_select" name="anrede_select">
+                  <option selected disabled value="anrede">Anrede</option>
+                  <option value="herr">Herr</option>
+                  <option value="frau">Frau</option>
+                </select>
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="vorname" class="form-label fw-bold">Vorname*</label>
+                <input id="vorname" name="vorname" placeholder="Max" type="text" class="form-control" required="required" />
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="nachname" class="form-label fw-bold">Nachname*</label>
+                <input id="nachname" name="nachname" placeholder="Mustermann" type="text" class="form-control" />
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="mail" class="form-label fw-bold">E-Mail-Adresse*</label>
+                <input id="mail" name="mail" placeholder="max@mustermann.de" type="email" class="form-control" />
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-6">
+                <label for="telefon" class="form-label fw-bold">Telefonnummer*</label>
+                <input id="telefon" name="telefon" placeholder="+49 172 12345678" type="tel" class="form-control" />
+              </div>
+            </section>
+
+            <!-- Submit Button -->
+            <div class="col-12 text-center pt-4">
+              <button name="submit" type="submit" class="btn btn-primary">Termin buchen</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
     <!-- Footer -->
-    <img src="./assets/images_web/welle_oben_dunkel.svg" style="margin-bottom: -5px" alt="XXX" />
+    <img src="./assets/images_web/welle_oben_dunkel.svg" style="margin-bottom: -5px" alt="Welle" />
     <footer class="bg-dunkelblaumatt text-white pt-5 pb-4">
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-3 col-lg-2 col-xl-1">
-            <a href="./index.html"><img src="./assets/images_web/logo_schwimmspaß_wortbildmarke_weiß.svg" class="img-fluid" alt="XXX" /></a>
+            <a href="./index.html"><img src="./assets/images_web/logo_schwimmspaß_wortbildmarke_weiß.svg" class="img-fluid" alt="Schwimmspaß Logo" /></a>
           </div>
           <nav class="col">
             <ul>

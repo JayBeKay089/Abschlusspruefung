@@ -101,6 +101,11 @@ nav .active-nav {
   border: 0px;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: unset;
+  color: unset;
+}
+
 /* @media (min-width: 768px) {
   .nav-link {
     color: var(--schwarz);
@@ -413,3 +418,9 @@ form h6 {
   background: linear-gradient(to top, rgba(18, 93, 137, 01), transparent);
   z-index: -1; /* Setzt den z-Index auf -1, damit das Pseudoelement hinter dem Text liegt */
 }
+
+
+/* Formular */
+/* form label {
+  font-weight: 600;
+} */
