@@ -98,7 +98,7 @@ nav .active-nav {
 }
 
 .navbar-toggler {
- border: 0px;
+  border: 0px;
 }
 
 /* @media (min-width: 768px) {
@@ -175,12 +175,12 @@ footer ul li a:hover {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(/assets/images_web/Link_Dreieck_orange.svg);
+  background-image: url(../images_web/Link_Dreieck_orange.svg);
   transform: rotate(180deg);
 }
 
 .carousel-control-next-icon {
-  background-image: url(/assets/images_web/Link_Dreieck_orange.svg);
+  background-image: url(../images_web/Link_Dreieck_orange.svg);
 }
 
 .carousel-control-next,
@@ -233,7 +233,7 @@ footer ul li a:hover {
 }
 
 .linkkarten a::after {
-  content: url(/assets/images_web/Link_Dreieck_orange.svg);
+  content: url(../images_web/Link_Dreieck_orange.svg);
   float: right;
   margin: 0 auto;
   position: relative;
@@ -245,7 +245,7 @@ footer ul li a:hover {
 }
 
 /* .linkkarten a:hover:after {
-  content: url(/assets/images_web/Link_Dreieck_weiss.svg);
+  content: url(../images_web/Link_Dreieck_weiss.svg);
 }
 
 .linkkarten a:hover {
@@ -299,19 +299,19 @@ footer ul li a:hover {
 }
 
 .zeit:before {
-  content: url(/assets/images_web/icon_zeit.svg);
+  content: url(../images_web/icon_zeit.svg);
 }
 
 .kalender:before {
-  content: url(/assets/images_web/icon_kalender.svg);
+  content: url(../images_web/icon_kalender.svg);
 }
 
 .uhrzeit:before {
-  content: url(/assets/images_web/icon_uhrzeit.svg);
+  content: url(../images_web/icon_uhrzeit.svg);
 }
 
 .preis:before {
-  content: url(/assets/images_web/icon_preis.svg);
+  content: url(../images_web/icon_preis.svg);
 }
 
 .deactivated {
@@ -341,19 +341,19 @@ footer ul li a:hover {
 }
 
 .deactivated .zeit:before {
-  content: url(/assets/images_web/icon_zeit_grau.svg);
+  content: url(../images_web/icon_zeit_grau.svg);
 }
 
 .deactivated .kalender:before {
-  content: url(/assets/images_web/icon_kalender_grau.svg);
+  content: url(../images_web/icon_kalender_grau.svg);
 }
 
 .deactivated .uhrzeit:before {
-  content: url(/assets/images_web/icon_uhrzeit_grau.svg);
+  content: url(../images_web/icon_uhrzeit_grau.svg);
 }
 
 .deactivated .preis:before {
-  content: url(/assets/images_web/icon_preis_grau.svg);
+  content: url(../images_web/icon_preis_grau.svg);
 }
 
 /* Formular */
