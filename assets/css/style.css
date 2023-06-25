@@ -43,6 +43,7 @@
   src: url("./fonts/rubik-v26-latin-600.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("./fonts/rubik-v26-latin-600.woff2") format("woff2"), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url("./fonts/rubik-v26-latin-600.woff") format("woff"), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */ url("./fonts/rubik-v26-latin-600.ttf") format("truetype"), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */ url("./fonts/rubik-v26-latin-600.svg#Rubik") format("svg"); /* Legacy iOS */
 }
 
+/* Standard Elemente */
 body {
   background-color: var(--weiss);
 }
@@ -88,6 +89,7 @@ a:hover {
   color: var(--orangehover);
 }
 
+/* Navbar  */
 .nav-link {
   color: var(--schwarz);
 }
@@ -101,18 +103,36 @@ nav .active-nav {
   border: 0px;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: unset;
   color: unset;
 }
 
-/* @media (min-width: 768px) {
-  .nav-link {
-    color: var(--schwarz);
-    padding: 0px 25px !important;
-  }
-} */
+/* Hero */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 
+.hero h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(18, 93, 137, 01), transparent);
+  z-index: -1; /* Setzt den z-Index auf -1, damit das Pseudoelement hinter dem Text liegt */
+}
+
+/* Footer */
 footer ul li {
   list-style-type: none;
   padding-bottom: 0.5rem;
@@ -127,52 +147,7 @@ footer ul li a:hover {
   text-decoration: underline;
 }
 
-/* ! Custom Farbklassen Text */
-.text-weiss {
-  color: var(--weiss);
-}
-
-.text-dunkelblaugesaettigt {
-  color: var(--dunkelblaugesaettigt);
-}
-.text-dunkelblaumatt {
-  color: var(--dunkelblaumatt);
-}
-
-.text-dunkelgrau {
-  color: var(--dunkelgrau);
-}
-
-/* ! Custom Farbklassen Hintergrundfarben */
-.bg-orange {
-  background-color: var(--orange);
-}
-.bg-orange:hover {
-  background-color: var(--orangehover);
-}
-.bg-schwarz {
-  background-color: var(--schwarz);
-}
-.bg-dunkelgrau {
-  background-color: var(--dunkelgrau);
-}
-.bg-hellgrau {
-  background-color: var(--hellgrau);
-}
-.bg-dunkelblaumatt {
-  background-color: var(--dunkelblaumatt);
-}
-.bg-dunkelblaugesaettigt {
-  background-color: var(--dunkelblaugesaettigt);
-}
-.bg-hellblau {
-  background-color: var(--hellblau);
-}
-.bg-weiss {
-  background-color: var(--weiss);
-}
-
-/* ! Slider => Link Bild anpassen */
+/* Slider  */
 .slider-img {
   display: block;
   height: auto;
@@ -195,7 +170,6 @@ footer ul li a:hover {
 }
 
 /* Linkkarten */
-
 @media (min-width: 768px) {
   .linkkartentextlinks {
     padding-right: 2rem;
@@ -249,24 +223,55 @@ footer ul li a:hover {
   border-color: var(--orange);
 }
 
-/* .linkkarten a:hover:after {
-  content: url(../images_web/Link_Dreieck_weiss.svg);
+/* Custom Farbklassen Text */
+.text-weiss {
+  color: var(--weiss);
 }
 
-.linkkarten a:hover {
+.text-dunkelblaugesaettigt {
+  color: var(--dunkelblaugesaettigt);
+}
+.text-dunkelblaumatt {
+  color: var(--dunkelblaumatt);
+}
+
+.text-dunkelgrau {
+  color: var(--dunkelgrau);
+}
+
+/* Custom Farbklassen Hintergrundfarben */
+.bg-orange {
   background-color: var(--orange);
-  color: var(--weiss);
-  border-color: var(--orange);
-} */
+}
+.bg-orange:hover {
+  background-color: var(--orangehover);
+}
+.bg-schwarz {
+  background-color: var(--schwarz);
+}
+.bg-dunkelgrau {
+  background-color: var(--dunkelgrau);
+}
+.bg-hellgrau {
+  background-color: var(--hellgrau);
+}
+.bg-dunkelblaumatt {
+  background-color: var(--dunkelblaumatt);
+}
+.bg-dunkelblaugesaettigt {
+  background-color: var(--dunkelblaugesaettigt);
+}
+.bg-hellblau {
+  background-color: var(--hellblau);
+}
+.bg-weiss {
+  background-color: var(--weiss);
+}
 
 /* Öffnungszeiten / Preise Tabelle */
 .tabelle p {
   margin-block-end: 0.4em;
 }
-
-/* .fw-bold {
-  padding-top: 10px;
-} */
 
 /* Detailseiten Breadcrumbs */
 .breadcrumb li a {
@@ -333,14 +338,7 @@ footer ul li a:hover {
 .deactivated h3,
 .deactivated h4,
 .deactivated h5,
-.deactivated h6
-/* ,
-.deactivaded .h1,
-.deactivaded .h2,
-.deactivaded .h3,
-.deactivaded .h4,
-.deactivaded .h5,
-.deactivaded .h6  */ {
+.deactivated h6 {
   color: var(--dunkelgrau) !important;
   background-color: var(--hellgrau);
 }
@@ -360,67 +358,3 @@ footer ul li a:hover {
 .deactivated .preis:before {
   content: url(../images_web/icon_preis_grau.svg);
 }
-
-/* Formular */
-/* form h2,
-form h3,
-form h4,
-form h5,
-form h6 {
-  color: var(--dunkelblaugesaettigt) !important;
-} */
-
-/* 
-.wave-container {  
-  height: 40vh;
-  background-color: #ff0000;
-  position: relative;
-}
-
-.wave-container::before {   
-  content: "";
-  width: 100%;
-  height: 61px;
-  position: absolute;
-  bottom: -0.3%;
-  left: 0;
-  background-size: auto;
-  background-repeat: repeat no-repeat;
-  background-position: 55vw bottom;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  96' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 70L50 66C100 62 200 53 300 36C400 18 500 -7 600 1C700 10 800 53 900 70C1000 88 1100 79 1150 75L1200 70V96H1150C1100 96 1000 96 900 96C800 96 700 96 600 96C500 96 400 96 300 96C200 96 100 96 50 96H0V70Z' fill='%23FFF5EE'/></svg>");
-}
-
-@media(max-width:850px) {
-  .wave-container::before {    
-    height: 30.5px
-  }  
-} */
-
-/* Hero */
-.hero {
-  position: relative;
-  height: 60vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.hero h1::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to top, rgba(18, 93, 137, 01), transparent);
-  z-index: -1; /* Setzt den z-Index auf -1, damit das Pseudoelement hinter dem Text liegt */
-}
-
-
-/* Formular */
-/* form label {
-  font-weight: 600;
-} */
